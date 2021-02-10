@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infos",
+  "info": {
+    "name": "info",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "dilutionItem": {
+      "model": "item",
+      "via": "infos"
+    },
+    "performance": {
+      "type": "string"
+    },
+    "applications": {
+      "collection": "application",
+      "via": "infos",
+      "dominant": true
+    },
+    "dilutionPercentage": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "products": {
+      "collection": "product",
+      "via": "info"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colors",
+  "info": {
+    "name": "Color"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "hexCode": {
+      "type": "string",
+      "required": true,
+      "minLength": 6
+    },
+    "items": {
+      "via": "color",
+      "collection": "item"
+    }
+  }
+}

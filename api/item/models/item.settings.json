@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "qty": {
+      "type": "integer"
+    },
+    "color": {
+      "model": "color",
+      "via": "items"
+    },
+    "variant": {
+      "model": "variant",
+      "via": "items"
+    },
+    "infos": {
+      "via": "dilutionItem",
+      "collection": "info"
+    },
+    "products": {
+      "via": "items",
+      "collection": "product"
+    }
+  }
+}
