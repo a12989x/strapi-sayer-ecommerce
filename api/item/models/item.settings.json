@@ -17,21 +17,21 @@
     "qty": {
       "type": "integer"
     },
+    "products": {
+      "via": "items",
+      "collection": "product"
+    },
     "color": {
       "model": "color",
+      "via": "items"
+    },
+    "size": {
+      "model": "size",
       "via": "items"
     },
     "variant": {
       "model": "variant",
       "via": "items"
-    },
-    "infos": {
-      "via": "dilutionItem",
-      "collection": "info"
-    },
-    "products": {
-      "via": "items",
-      "collection": "product"
     }
   }
 }

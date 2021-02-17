@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "variants",
+  "collectionName": "types",
   "info": {
-    "name": "variant",
+    "name": "category",
     "description": ""
   },
   "options": {
@@ -12,13 +12,11 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
-    "items": {
-      "via": "variant",
-      "collection": "item"
+    "products": {
+      "via": "category",
+      "collection": "product"
     }
   }
 }

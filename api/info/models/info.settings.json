@@ -15,10 +15,6 @@
       "type": "text",
       "required": true
     },
-    "dilutionItem": {
-      "model": "item",
-      "via": "infos"
-    },
     "performance": {
       "type": "string"
     },
@@ -30,14 +26,16 @@
     "dilutionPercentage": {
       "type": "integer"
     },
-    "name": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
     "products": {
       "collection": "product",
       "via": "info"
+    },
+    "name": {
+      "type": "string"
+    },
+    "dilutionProduct": {
+      "model": "product",
+      "via": "infos"
     }
   }
 }

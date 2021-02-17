@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "colors",
   "info": {
-    "name": "Color"
+    "name": "Color",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
