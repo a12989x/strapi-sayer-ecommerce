@@ -6,10 +6,10 @@
  */
 
 module.exports = {
-  // find: (ctx) => {
-  //     return strapi.query('poduct').find(ctx.query, ["items"])
+  // // find: (ctx) => {
+  // //     return strapi.query('poduct').find(ctx.query, ["items"])
+  // // },
+  // findOne: (ctx) => {
+  //   return strapi.query("product").findOne(ctx.query, ["info", "items"]);
   // },
-  findOne: (ctx) => {
-    return strapi.query("product").findOne(ctx.query, ["info", "items"]);
-  },
 };
