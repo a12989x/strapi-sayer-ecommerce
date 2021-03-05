@@ -12,14 +12,15 @@
   },
   "attributes": {
     "code": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "qty": {
       "type": "integer"
     },
     "products": {
-      "via": "items",
-      "collection": "product"
+      "collection": "product",
+      "via": "items"
     },
     "color": {
       "model": "color",

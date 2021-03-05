@@ -18,8 +18,7 @@
     },
     "hexCode": {
       "type": "string",
-      "required": true,
-      "minLength": 6
+      "required": false
     },
     "items": {
       "via": "color",

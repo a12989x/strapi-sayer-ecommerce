@@ -19,8 +19,8 @@
       "model": "info"
     },
     "items": {
-      "collection": "item",
       "via": "products",
+      "collection": "item",
       "dominant": true
     },
     "generalCode": {
