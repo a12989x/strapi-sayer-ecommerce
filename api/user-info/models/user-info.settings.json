@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_infos",
+  "info": {
+    "name": "userInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_info"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "component",
+      "repeatable": true,
+      "component": "addresses.address"
+    }
+  }
+}

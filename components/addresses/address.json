@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_addresses_addresses",
+  "info": {
+    "name": "address",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "streetAddress": {
+      "type": "text"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "del": {
+      "type": "string"
+    }
+  }
+}
